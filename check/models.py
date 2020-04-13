@@ -6,8 +6,3 @@ class Fluffy(models.Model):
 
     def __str__(self):
         return f"A fluffy creature called '{self.name}'"
-
-    def save(self, *args, **kwargs):
-        print("Entering SAVE...")
-        super().save(*args, **kwargs)
-        print("Leaving SAVE...")
